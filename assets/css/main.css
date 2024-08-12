@@ -831,6 +831,13 @@ section,
   }
 }
 
+@media (max-width: 535px),
+(max-height: 1385x) {
+  .hero .title .bg-t1 {
+    font-size: 95px;
+  }
+}
+
 .hero .info h2 {
   margin-bottom: 30px;
   padding-bottom: 30px;
