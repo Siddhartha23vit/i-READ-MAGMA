@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Contact Us</title>
+  <title>Committee</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/vit/VIT-AP_University_seal (1).png" rel="icon">
+  <link href="assets/Vit/VIT-AP_University_seal (1).png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -27,10 +27,12 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/committee-test.css" rel="stylesheet">
+
 
 </head>
 
-<body class="contact-page">
+<body class="projects-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -42,7 +44,7 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="about.html">About VIT-AP</a></li>
@@ -51,10 +53,10 @@
             </ul>
           </li>
           <li><a href="team.html">Resource Persons</a></li>
-          <li><a href="Committee.html">Committee</a></li>
+          <li><a href="Committee.html" class="active">Committee</a></li>
           
           <li><a href="Tourist spots.html">Tourist spots</a></li>         
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -63,102 +65,53 @@
   </header>
 
   <main class="main">
-    <div class="whatsapp-icon">
-      <a href="https://wa.me/9488138153" target="_blank">
-          <img src="assets/Vit/wapp1.png" alt="WhatsApp">
-   </a>
-</div>
+ <!-- Page Title -->
+ <div class="page-title dark-background" style="background-image: url(https://www.greenbiz.com/sites/default/files/images/articles/featured/roundtable-hxdbzxy-sstock.jpg);">
+    <div class="container position-relative">
+      <h1>Committee</h1>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li class="current">Committee</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
 
-    <!-- Page Title -->
-    <div class="page-title dark-background" style="background-image: url(https://www.microsoft.com/en-us/research/uploads/prod/2018/08/01_MSR_SIGCOMM_Data_Network_1400x788.png);">
-      <div class="container position-relative">
-        <h1>Contact</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- committee start -->
+    <section class="iframe-container" style="height: 600px; overflow: hidden;">
+        <iframe src="comitee-test1.html" title="Committee Test" ></iframe>
+        <style>
+            .iframe-container {
+    position: relative;
+    margin-top: 20px; /* Adjust as needed */
+	height: 100%;
+	bottom: 200%;
+}
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+/* Ensure iframe does not overlay content */
+.iframe-container iframe {
+    width: 100%;
+    height:800px; /* Adjust height as needed */
+    border: none; /* Remove border if not needed */
+    display: block; /* Ensure it takes up the block space */
+    overflow: hidden;
+}
+        </style>
+      </section>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <p>VIT-AP University, Andhra Pradesh, India. </p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone"></i>
-              <h3>Call Us</h3>
-              <p>+91 9488138153</p>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>prabhakaran.thandapani@vitap.ac.in</p>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
-
-        <div class="row gy-4 mt-1">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5747759786846!2d80.49443289678956!3d16.497055400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f27d40f21c55%3A0x1490eacd54859850!2sVIT-AP%20University!5e0!3m2!1sen!2sin!4v1723484408837!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div><!-- End Google Maps -->
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400" style="box-shadow: 5px 5px #aa2b33;">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+      
+    <!-- committe end -->   
 
   </main>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
 
   <footer id="footer" class="footer dark-background">
 

@@ -1,15 +1,3 @@
-/**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -34,7 +22,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #feb900; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #e81414; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -326,7 +314,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: white;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -440,7 +428,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(0, 5, 10, 0.8);
     transition: 0.3s;
   }
 
@@ -455,7 +443,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: #383838;
   background-size: cover;
   font-size: 14px;
   position: relative;
@@ -482,8 +470,10 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  /* max-height: 40px;
+  margin-right: 6px; */
+  height: 50px;
+  width: 120px;
 }
 
 .footer .footer-about .logo span {
@@ -563,6 +553,7 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 5px;
+  color: white;
 }
 
 .footer .copyright {
@@ -775,10 +766,46 @@ section,
   justify-content: center;
   overflow: hidden;
   background: linear-gradient(-45deg, #1b1818, #03000093,  #ef1313,hsl(0, 5%, 9%));
+  /* background-color: rgba(19, 15, 15, 0.921); */
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 12s ease infinite;
 }
 
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+.hero .title {
+	font-family: "Cairo";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+	line-height:2
+}
+
+.hero .title .bg-t1 {
+  background: linear-gradient(-45deg, #0f0e0e, #03000093,  #ef1313,hsl(0, 5%, 9%));
+	background-size: 400% 400%;
+	animation: gradient s ease infinite;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 128px;
+	margin: 10px 0;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -790,7 +817,6 @@ section,
 		background-position: 0% 50%;
 	}
 }
-
 .hero .info {
   position: relative;
   inset: 0;
@@ -853,6 +879,25 @@ section,
 
 .hero .info .btn-get-started:hover {
   background: var(--accent-color);
+}
+.btn-get-started {
+  color: #ef1313;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 5px 5px #aa2b33;
+  margin: 10px;
+  
+}
+.btn-get-started:hover {
+  box-shadow: 5px 5px black;
+  color:black;
 }
 
 .hero .carousel {
@@ -1182,7 +1227,7 @@ section,
   object-fit: cover;
   z-index: 1;
 }
-iframe {
+#frame {
   position: absolute;
   inset: 0;
   border: none;
@@ -1289,9 +1334,11 @@ iframe {
   border-radius: 0;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   cursor: pointer;
   height: 100%;
+  width: 100%;
   border: 0;
   border-bottom: 4px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
@@ -1860,7 +1907,11 @@ iframe {
 .team .member {
   position: relative;
 }
-
+/* .team .containteam{
+  background-color: red;
+  align-items: center;
+  justify-content: c;
+} */
 .team .member .member-img {
   margin: 0 80px;
   height: 230px;
@@ -1868,6 +1919,11 @@ iframe {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  
+  display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically if the container has a fixed height */
+    
 }
 
 @media (max-width: 1024px) {
@@ -2662,9 +2718,15 @@ iframe {
 .contact .info-item {
   background-color: var(--surface-color);
   padding: 20px 0 30px 0;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #aa2b33;
+  box-shadow: 5px 5px #aa2b33;  
 }
-
+.contact .info-item:hover {
+  background-color: var(--surface-color);
+  padding: 20px 0 30px 0;
+  border: 1px solid #000000;
+  box-shadow: 5px 5px #000000;  
+}
 .contact .info-item i {
   font-size: 20px;
   color: var(--accent-color);
@@ -2697,8 +2759,17 @@ iframe {
   background-color: var(--surface-color);
   height: 100%;
   padding: 30px;
+  border-radius: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #aa2b33;
 }
+/* .contact .php-email-form .form-control {
+  background-color: var(--surface-color);
+  height: 100%;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+} */
 
 @media (max-width: 575px) {
   .contact .php-email-form {
@@ -2713,9 +2784,10 @@ iframe {
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
-  background-color: var(--surface-color);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  color: black;
+  background-color: white;
+  border-color: black;
+  border-radius: 15px;
 }
 
 .contact .php-email-form input[type=text]:focus,
@@ -2737,22 +2809,15 @@ iframe {
   padding: 10px 30px;
   transition: 0.4s;
   border-radius: 50px;
+  box-shadow: 5px 5px #aa2b33;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, var(--accent-color), transparent 10%);
+  box-shadow: 5px 5px black;
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
 .widgets-container {
   background-color: var(--surface-color);
   padding: 30px;
@@ -2930,12 +2995,6 @@ iframe {
 
 /* button animation */
 .button-35 {
-  align-items: center;
-  background-color: #ed2e2e;
-  border-radius: 12px;
-  /* box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
-  box-sizing: border-box;
-  color: #121212; */
   cursor: pointer;
   display: inline-flex;
   flex: 1 1 auto;
@@ -2955,14 +3014,22 @@ iframe {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  box-shadow: 5px 5px black;
+  background-color:#aa2b33;
+  color: black;
+  border: 1px solid #aa2b33;
+  width: 88%;
 }
 
 .button-35:hover {
-  box-shadow: #121212 0 0 0 4px, transparent 0 0 0 0;
+  background: transparent;
+  border: 1px solid #aa2b33;
+  color: #aa2b33;
+  box-shadow: 5px 5px #aa2b33;
 }
 .header .logo span {
-  font-size: 24px;
-  padding-left: 1px;
+  max-height: 32px;
+  margin-right: 8px;
   font-family: var(--heading-font);
   color: var(--color-primary);
 }
@@ -3039,4 +3106,75 @@ color: rgba(255, 255, 255, 0.60);
 
 .parallax-window {
   background: transparent;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 72px;
+  right: 11px;
+  z-index: 1000;
+}
+
+.whatsapp-icon a img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.whatsapp-icon a img:hover {
+  transform: scale(1.1);
+}
+
+
+
+.klpr-courses-container {
+  max-width: 1200px; /* Increase the max width to a larger value */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.klpr-course {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px #aa2b33;
+  display: flex;
+  border: 1px solid #aa2b33;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 100%; /* Make each course take up the full width of the container */
+  max-width: 1200px; /* Increase the max width */
+}
+
+.klpr-course h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.klpr-course h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.klpr-course-preview {
+  background-color: #ff2e2e;
+  color: #fff;
+  padding: 30px;
+  max-width: 300px; /* Adjust if you want the preview section to be wider */
+}
+
+.klpr-course-info {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.klpr-progress-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  width: 150px;
 }
