@@ -13,10 +13,10 @@
     // window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
     if (window.scrollY > 100) {
       selectBody.classList.add('scrolled');
-      logo.src = 'assets/vit/vitaplogo-rest.png'; // Path to the logo when scrolled
+      logo.src = 'assets/Vit/vitaplogo-rest.png'; // Path to the logo when scrolled
   } else {
       selectBody.classList.remove('scrolled');
-      logo.src = 'assets/vit/vitaplogo.webp'; // Path to the default logo
+      logo.src = 'assets/Vit/vitaplogo.webp'; // Path to the default logo
   }
   }
 
