@@ -8,6 +8,10 @@
     padding: 5%;
     margin: 5% auto;
   }
+  .prr-container h2{
+    color: white;
+    font-size: 3vh;
+  }
 
   .prr-flex {
     display: flex;
